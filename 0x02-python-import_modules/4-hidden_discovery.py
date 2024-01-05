@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    from hidden_4 import *
+    import hidden_4
 
-    def_names_pyc = dir()
+    def_names_pyc = dir(hidden_4)
 
-    for names in range(len(def_names_pyc)):
-        if (def_names_pyc[names][:2] != "__"):
-            print("{:s}".format(def_names_pyc[names]))
+    for names in def_names_pyc:
+        if (names[:2] != "__"):
+            print("{:s}".format(names))
