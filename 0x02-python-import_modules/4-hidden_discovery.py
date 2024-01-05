@@ -6,5 +6,5 @@ if __name__ == "__main__":
     def_names_pyc = dir()
 
     for names in range(len(def_names_pyc)):
-        if (names[:2] != "__"):
+        if (def_names_pyc[names][:2] != "__"):
             print("{:s}".format(def_names_pyc[names]))
