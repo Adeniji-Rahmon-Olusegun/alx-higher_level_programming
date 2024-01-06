@@ -20,9 +20,9 @@ def new_in_list(my_list, idx, element):
 
     if (idx < 0):
         return (copy_org_list)
-    elif (idx > (len(my_list) - 1)):
+    elif (idx >= len(my_list)):
         return (copy_org_list)
 
     copy_org_list[idx] = element
 
-    return(copy_org_list)
+    return (copy_org_list)
