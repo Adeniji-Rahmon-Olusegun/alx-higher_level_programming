@@ -10,5 +10,6 @@ def print_reversed_list_integer(my_list=[]):
     Return:
             None
     """
-    for obj in range(len(my_list) - 1, -1, -1):
-        print("{:d}".format(my_list[obj]))
+    if (my_list):
+        for obj in range(len(my_list) - 1, -1, -1):
+            print("{:d}".format(my_list[obj]))
