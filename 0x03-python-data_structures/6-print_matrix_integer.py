@@ -10,6 +10,9 @@ def print_matrix_integer(matrix=[[]]):
     Return:
             None
     """
+    if not matrix:
+        return
+
     for first_list in range(len(matrix)):
         for second_list in range(len(matrix[0])):
             print("{:d}".format(matrix[first_list][second_list]), end=" ")
