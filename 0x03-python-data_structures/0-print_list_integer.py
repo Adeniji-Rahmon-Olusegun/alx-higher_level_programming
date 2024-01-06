@@ -11,4 +11,4 @@ def print_list_integer(my_list=[]):
                 None
     """
     for obj in my_list:
-        print("{}".format(obj))
+        print("{:d}".format(obj))
