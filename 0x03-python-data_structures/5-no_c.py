@@ -19,3 +19,4 @@ def no_c(my_string):
                 new_string += char_check
 
         return (new_string)
+    return(my_string)
