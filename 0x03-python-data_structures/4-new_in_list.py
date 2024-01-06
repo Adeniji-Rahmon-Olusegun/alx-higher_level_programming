@@ -16,7 +16,7 @@ def new_in_list(my_list, idx, element):
             copy of my_list: if idx < -ve
             copy of my_list: if idx >= len(my_list)
     """
-    copy_org_list = [cobj for cobj in my_list]
+    copy_org_list = mylist[:]
 
     if (idx < 0):
         return (copy_org_list)
