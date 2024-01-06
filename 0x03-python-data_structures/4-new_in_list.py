@@ -17,12 +17,13 @@ def new_in_list(my_list, idx, element):
             copy of my_list: if idx >= len(my_list)
     """
     if my_list:
+        copy_org_list = [cobj for cobj in my_list]
+
         if (idx < 0):
-            return ([cobj for cobj in my_list])
+            return (copy_org_list)
         elif (idx >= len(my_list)):
-            return ([cobj for cobj in my_list])
+            return (copy_org_list)
 
-        update_list = [cobj for cobj in my_list]
-        update_list[idx] = element
+        copy_org_list[idx] = element
 
-        return(update_list)
+        return(copy_org_list)
