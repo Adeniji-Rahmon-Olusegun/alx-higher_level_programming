@@ -13,7 +13,9 @@ def print_matrix_integer(matrix=[[]]):
     if not matrix:
         return
 
-    for first_list in range(len(matrix)):
-        for second_list in range(len(matrix[0])):
-            print("{:d}".format(matrix[first_list][second_list]), end=" ")
+    lt = len(matrix[0]) - 1
+
+    for fl in matrix:
+        for sdl in range(len(fl)):
+            print("{:d}".format(fl[sdl]), end=" " if sdl != lt else "")
         print(end='\n')
