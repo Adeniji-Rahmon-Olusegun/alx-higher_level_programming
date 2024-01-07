@@ -15,4 +15,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
     mod_tupa = tuple_a + (0, 0)
     mod_tupb = tuple_b + (0, 0)
 
-    return (mod_tupa[0] + mod_tupb[0], mod_tupa[0] + mod_tupb[0])
+    return (mod_tupa[0] + mod_tupb[0], mod_tupa[1] + mod_tupb[1])
