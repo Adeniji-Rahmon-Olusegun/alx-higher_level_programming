@@ -15,10 +15,10 @@ def divisible_by_2(my_list=[]):
 
         check_div_2 = []
 
-        for happy_2_checker in myList:
+        for happy_2_checker in my_list:
             if happy_2_checker % 2 == 0:
-                check_div_2 += list(True)
+                check_div_2.append(True)
             else:
-                check_div_2 += list(False)
+                check_div_2.append(False)
 
         return check_div_2
