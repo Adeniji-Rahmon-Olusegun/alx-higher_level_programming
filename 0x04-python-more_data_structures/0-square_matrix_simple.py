@@ -11,12 +11,12 @@ def square_matrix_simple(matrix=[]):
             Matrix containing the square of values in the
             original matrix
     """
-    squared_matrix = matrix.copy()
+    squared_matrix = [[0 for i in L1] for L1 in matrix]
 
     dic_m = {"dmatrix": squared_matrix}
 
     for matl in range(len(dic_m["dmatrix"])):
         for idx in range(len(dic_m["dmatrix"][matl])):
-            dic_m["dmatrix"][matl][idx] = (dic_m["dmatrix"][matl][idx])**2
+            dic_m["dmatrix"][matl][idx] = (matrix[matl][idx])**2
 
     return (dic_m["dmatrix"])
