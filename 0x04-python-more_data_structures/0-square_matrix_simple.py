@@ -16,7 +16,7 @@ def square_matrix_simple(matrix=[]):
     dic_m = {"dmatrix": squared_matrix}
 
     for matl in range(len(dic_m["dmatrix"])):
-        for idx in range(len(dic_m["dmatrix"][mat]l)):
+        for idx in range(len(dic_m["dmatrix"][matl])):
             dic_m["dmatrix"][matl][idx] = (dic_m["dmatrix"][matl][idx])**2
 
     return (dic_m["dmatrix"])
