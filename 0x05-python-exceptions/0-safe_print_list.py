@@ -14,10 +14,12 @@ def safe_print_list(my_list=[], x=0):
     item_count = 0
 
     try:
-        for item in my_list:
-            print("{}".format(item), end="")
+        for item in range(x):
+            print("{}".format(my_list[item]), end="")
             item_count += 1
     except IndexError:
         pass
+
+    print()
 
     return item_count
