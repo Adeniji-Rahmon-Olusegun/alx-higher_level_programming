@@ -8,7 +8,7 @@ def safe_print_integer(value):
         value: (str, int, etc.,)
 
     Return:
-          Bool
+          bool
     """
 
     try:
