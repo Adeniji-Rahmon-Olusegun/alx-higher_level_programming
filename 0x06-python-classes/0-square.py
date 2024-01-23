@@ -4,10 +4,10 @@ class Square:
     """
     This is an class that defines square
 
-    Args:
+    Attributes:
         None
 
-    Attributes:
+    Methods:
         None
     """
     pass
