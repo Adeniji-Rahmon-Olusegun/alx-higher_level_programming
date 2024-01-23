@@ -4,13 +4,5 @@ i
 
 
 class Square:
-    """
-    This is an class that defines square
-
-    Attributes:
-        None
-
-    Methods:
-        None
-    """
+    """This is an class that declares empty class."""
     pass
