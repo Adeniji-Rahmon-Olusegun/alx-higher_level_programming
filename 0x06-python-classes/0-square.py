@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
+i
 """Empty Square class"""
+
 
 class Square:
     """
