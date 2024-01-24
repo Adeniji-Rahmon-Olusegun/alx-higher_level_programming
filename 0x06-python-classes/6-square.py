@@ -49,7 +49,7 @@ class Square:
         return self.__position
 
     @position.setter
-    def postion(self, value):
+    def position(self, value):
         """Sets the values of postion"""
         err_msg = "position must be a tuple of 2 positive integers"
         if type(value) != tuple or len(value) != 2:
