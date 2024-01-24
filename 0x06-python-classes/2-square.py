@@ -10,6 +10,10 @@ class Square:
 
     Attributes:
         size (int): length/breadth of a square
+
+    Raises:
+        TypeError: if size not int
+        ValueError: if size < 0
     """
     def __init__(self, size=0):
         if not isinstance(size, int):
