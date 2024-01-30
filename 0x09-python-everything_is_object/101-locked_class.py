@@ -5,10 +5,5 @@ class LockedClass:
     new instances except if the new instance attribute
     is called first_name
     """
-    __slots__ = ("first_name",)
 
-    def __setattr__(self, p_name, p_val):
-        if p_name != "first_name":
-            msg = f"'LockedClass' object has no attribute '{p_name}'"
-            raise AttributeError(msg)
-        super().__setattr__(p_name, p_val)
+    __slots__ = ("first_name",)
