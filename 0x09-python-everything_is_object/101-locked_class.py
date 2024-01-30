@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Locked Class for low memory"""
+
 
 class LockedClass:
     """Prevents the user from dynamically creating
