@@ -50,7 +50,5 @@ class Rectangle:
 
         for depth in range(self.__height):
             shape += "#" * self.__width + "\n"
-        shape.rstrip()
 
-        return shape
-
+        return shape.rstrip()
