@@ -5,6 +5,7 @@
 class MyList(list):
     """This inherits properties of list"""
 
-    @staticmethod
-    def print_sorted():
-        print(sorted(my_list))
+    def print_sorted(self):
+        """Sorts a list"""
+
+        print(sorted(list((self))))
