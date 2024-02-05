@@ -37,3 +37,14 @@ Traceback (most recent call last):
   File "/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 16, in integer_validator
     raise TypeError("{} must be an integer".format(name));
 TypeError: bri must be an integer
+>>> bg.integer_validator()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> bg.integer_validator(0, 12)
+>>> bg.integer_validator(34, "ink")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 16, in integer_validator
+    raise TypeError("{} must be an integer".format(name))
+TypeError: 34 must be an integer
