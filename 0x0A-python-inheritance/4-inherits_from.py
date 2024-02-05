@@ -1,5 +1,5 @@
 #!/urs/bin/python3
-"""Module contains inherits_from function"""
+"""Module contains if inherit function"""
 
 
 def inherits_from(obj, a_class):
