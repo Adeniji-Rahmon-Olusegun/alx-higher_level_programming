@@ -4,7 +4,7 @@
 import json
 
 
-def to_json_string(my_obj):
+def from_json_string(my_obj):
     """
     Converts JSON string to python object
 
