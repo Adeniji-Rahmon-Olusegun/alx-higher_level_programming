@@ -12,6 +12,6 @@ def read_file(filename=""):
     Return:
         None
     """
-    with open(filename, 'r') as file_obj:
-        data_txt = file_obj.read()
-        print(data_txt)
+    with open(filename, 'r', encoding='utf-8') as file_obj:
+        for data_txt in file_obj:
+            print(data_txt, end="")
