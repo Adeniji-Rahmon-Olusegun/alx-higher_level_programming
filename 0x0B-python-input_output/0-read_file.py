@@ -13,4 +13,4 @@ def read_file(filename=""):
         None
     """
     with open(filename, "r") as file_obj:
-        print(file_obj.read)
+        print(file_obj.read())
