@@ -12,6 +12,6 @@ def read_file(filename=""):
     Return:
         None
     """
-    with open(filename, "r") as file_obj:
+    with open(filename, 'r') as file_obj:
         data_txt = file_obj.read()
         print(data_txt)
