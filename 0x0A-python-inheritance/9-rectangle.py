@@ -7,7 +7,7 @@ class Rectangle(BaseGeometry):
     """This class inherits BaseGeometry properties"""
 
     def __str__(self):
-        return f"[Rectangle] <width>/<height>"
+        return f"[Rectangle] {self.__width}/{self.__height}"
 
     def __repr__(self):
         return f"[Rectangle] <width>/<height>"
