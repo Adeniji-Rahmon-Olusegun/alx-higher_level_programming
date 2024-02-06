@@ -16,4 +16,5 @@ def add_attribute(objects, obj_name, obj_value):
     """
     if hasattr(objects, '__dict__') or hasattr(type(objects), '__dict__'):
         setattr(objects, obj_name, obj_value)
-    raise TypeError("can't add new attribute")
+    else:
+        raise TypeError("can't add new attribute")
