@@ -15,3 +15,6 @@ def write_file(filename="", text=""):
     """
     with open(filename, mode="w", encoding='utf-8') as file_obj:
         file_obj.write(text)
+        data_len = file_obj.tell()
+
+    return data_len
