@@ -24,6 +24,6 @@ class Student:
             cond_2 =  all(isinstance(element, str) for element in attrs)
         bool_state = cond_1 and cond_2
 
-        if boo_state:
+        if bool_state:
             stud_info = {k: v for k, v in stud_info.items() if k in attrs}
         return stud_info
