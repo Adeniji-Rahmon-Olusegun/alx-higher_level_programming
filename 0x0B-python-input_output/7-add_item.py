@@ -11,7 +11,7 @@ user_args = sys.argv[1:]
 
 
 try:
-    load_from_json_file("add_item.json")
+    user_list = load_from_json_file("add_item.json")
 except FileNotFoundError:
     user_list = []
 
