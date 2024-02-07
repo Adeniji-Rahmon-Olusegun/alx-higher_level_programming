@@ -1,16 +1,18 @@
 #!/usr/bin/python3
-"""Module contains save_to_json_file function"""
+"""Module contains load_from_json_file function"""
 
-def save_to_json_file(my_obj, filename):
+import json
+
+
+def load_from_json_file(filename):
     """
-    Writes an Object to a text file using JSON repr.
+    Creates an Object from JSON file.
 
     Args:
-        my_obj: Python Object
-        filename: file to be written to
+        filename: file containing JSON data
 
     Return:
         None
     """
-    with open(filename, mode="w") as json_file:
-        json.dump(my_obj, json_file)
+    with open(filename, mode="r") as json_file:
+        json.load(json_file)
