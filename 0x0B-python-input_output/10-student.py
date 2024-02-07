@@ -26,4 +26,4 @@ class Student:
 
         if boo_state:
             stud_info = {k: v for k, v in stud_info.items() if k in attrs}
-        return student_info
+        return stud_info
