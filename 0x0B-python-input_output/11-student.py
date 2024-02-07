@@ -15,13 +15,16 @@ class Student:
     def to_json(self, attrs=None):
         """Retrieves a dictionary representation of a Student"""
 
-        stud_info =  {"first_name": self.first_name, "last_name": self.last_name,
-                "age": self.age}
+        stud_info = {
+                "first_name": self.first_name,
+                "last_name": self.last_name,
+                "age": self.age
+                }
 
         cond_1 = isinstance(attrs, list)
 
         if attrs is not None:
-            cond_2 =  all(isinstance(element, str) for element in attrs)
+            cond_2 = all(isinstance(element, str) for element in attrs)
         bool_state = cond_1 and cond_2
 
         if bool_state:
