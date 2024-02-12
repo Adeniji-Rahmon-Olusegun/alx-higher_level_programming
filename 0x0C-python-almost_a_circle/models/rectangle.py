@@ -77,5 +77,8 @@ class Rectangle(Base):
     def display(self):
         """Displays a graphical representation o a rectangle"""
 
+        for len in range(self.__y):
+            print()
+
         for unit_len in range(self.__height):
-            print("#" * self.__width)
+            print(" " * self._x + "#" * self.__width)
