@@ -25,3 +25,15 @@ class Square(Rectangle):
     def size(self, value):
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """Assigns argumet to public attributes"""
+
+        if args:
+            attr = ["id", "size", "x", "y"]
+
+            for idx, param in enumerate(args):
+                setattr(self, attr[idx], args)
+        else:
+            for key, val in kwargs.items():
+                setattr(self, key, val)
