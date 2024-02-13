@@ -32,7 +32,7 @@ class Base:
 
         filename = cls.__name__ + ".json"
 
-        dump_obj = to_json_string(list_objs)
+        dump_obj = cls.to_json_string(list_objs)
 
         with open(filename, "w") as file_obj:
             file_obj.write(dump_obj)
