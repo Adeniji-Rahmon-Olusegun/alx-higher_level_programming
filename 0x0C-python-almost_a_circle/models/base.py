@@ -32,9 +32,7 @@ class Base:
 
         filename = cls.__name__ + ".json"
 
-        if not list_objs:
-            with open(filename, "w") as file_obj:
-                json.dump("[]", file_obj)
-        else:
-            with open(filename, "w") as file_obj:
-                json.dump(list_objs, file_obj)
+        dump_obj = to_json_string(list_objs)
+
+        with open(filename, "w") as file_obj:
+            file_obj.write(dump_obj)
