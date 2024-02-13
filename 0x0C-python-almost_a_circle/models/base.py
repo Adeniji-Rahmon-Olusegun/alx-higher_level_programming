@@ -31,7 +31,7 @@ class Base:
         """Writes JSON string representation of list_objs to a file"""
         
         if lists_objs is None:
-            list_objs = []
+            list_objs = "[]"
         filename = f"{cls.__name__}.json"
 
         dump_obj = cls.to_json_string(list_objs)
