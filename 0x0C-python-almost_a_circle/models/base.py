@@ -41,3 +41,11 @@ class Base:
 
         with open(filename, "w") as file_obj:
             file_obj.write(dump_obj)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Returns list of the JSON string representation json_string"""
+
+        if not json_string:
+            return []
+        return json.loads(json_string)
