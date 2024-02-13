@@ -62,3 +62,20 @@ class Base:
         dmy_inst.update(**dictionary)
 
         return dmy_inst
+
+    @classmethod
+    def load_from_file(cls):
+        """Returns a list of instnces"""
+
+        file_name = f"{cls.__name__}.json"
+
+        try:
+            with open(file_name, "r") as file_obj:
+                js_str = file_obj.read()
+                dicts = cls.from_json_string(js_str)
+                obj_instance = [cls.create(**dic) for dic in dicts]
+
+                return obj_instances
+
+        except FileNotFoundError:
+            return []
