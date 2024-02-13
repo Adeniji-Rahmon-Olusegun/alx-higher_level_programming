@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Module contains Base class"""
 
+import json
+
 
 class Base:
     """Parent class to other geometry class"""
@@ -18,5 +20,7 @@ class Base:
         """Json representation of list_dictionary"""
 
         if list_dictionaries is None:
-            return "[]"
-        return list_dictionaries.dumps()
+            return "[]"        
+        dump =  json.dumps(list_dictionaries)
+
+        return dump
