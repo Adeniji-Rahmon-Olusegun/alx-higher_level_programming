@@ -73,7 +73,7 @@ class Base:
             with open(file_name, "r") as file_obj:
                 js_str = file_obj.read()
                 dicts = cls.from_json_string(js_str)
-                obj_instance = [cls.create(**dic) for dic in dicts]
+                obj_instances = [cls.create(**dic) for dic in dicts]
 
                 return obj_instances
 
