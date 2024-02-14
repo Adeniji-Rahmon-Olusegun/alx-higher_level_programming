@@ -79,3 +79,49 @@ class Base:
 
         except FileNotFoundError:
             return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Serializes in CSV"""
+
+        file_name = f"{cls.__name__}.csv"
+
+        with open(file_name, "w") as file_obj:
+            for objs in list_objs:
+                if cls.__name__ == "Rectangle":
+                    file_obj.write(f"{obj.id},{obj.width},{obj.height},{obj.x},{obj.y}\n")
+                elif cls.__name__ == "Square":
+                    file_obj.write(f"{obj.id},{obj.size},{obj.x},{obj.y}\n")
+    
+    @classmethod
+    def load_from_file_csv(cls):
+        """Deserializes in CSV"""
+
+        file_name = f"{cls.__name__}.csv"
+
+        insts = []
+        
+        try:
+            with open(file_name, "r") as file_obj:
+                for line in file_obj:
+                    data_val = line.strip().split(",")
+                    if cls.__name__ == "Rectangle":
+                        inst_obj = cls.create(
+                                    id=int(data_val[0]),
+                                    width=int(data_val[1]),
+                                    height=int(data_val[2]),
+                                    x=int(data_val[3]),
+                                    y=int(data_val[4])
+                                )
+                    elif cls.__name__ == "Square":
+                        inst_obj = cls.create(
+                                    id=int(data_val[0]),
+                                    size=int(data_val[1]),
+                                    x=int(data_val[3]),
+                                    y=int(data_val[4])
+                                )
+                    insts.append(inst_obj)
+        except FileNotFoundError:
+            pass
+
+        return insts
