@@ -1,5 +1,5 @@
 -- groups number using scores
-SELECT scores COUNT(*) AS num
+SELECT score, COUNT(*) AS num
 FROM second_table
-GROUP BY scores
-ORDER BY number DESC, scores DESC;
+GROUP BY score
+ORDER BY number DESC, score DESC;
