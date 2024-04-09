@@ -3,3 +3,5 @@
 class Rectangle {
   // Empty
 }
+
+module.exports = Rectange;
