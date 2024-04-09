@@ -18,18 +18,15 @@ class Rectangle {
 
   rotate () {
     let j;
-    
+
     for (j = 0; j < this.width; j++) {
       console.log('X'.repeat(this.height));
     }
   }
 
   double () {
-    let k;
-   
-    for (k = 0; k < (this.width * 2); k++) {
-      console.log('X'.repeat(this.height * 2));
-    }
+    this.width *= 2;
+    this.height *= 2;
   }
 }
 
