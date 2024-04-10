@@ -1,10 +1,9 @@
 #!/usr/bin/node
 
-exports.logMe = function (item) {
-  let index = 0;
-  const argPos = 2;
+let index = 0;
 
-  console.log(`${index}: ${process.argv[argPos]}`);
+exports.logMe = function (item) {
+  console.log(`${index}: ${item}`);
 
   index++;
 };
