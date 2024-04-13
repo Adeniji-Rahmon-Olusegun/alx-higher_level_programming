@@ -21,8 +21,8 @@ if __name__ == "__main__":
 
     cursor.execute(
             "SELECT cities.name, states.name\
-            FROM cities
-            INNER JOIN states on cities.id = states.id
+            FROM cities\
+            INNER JOIN states on cities.id = states.id\
             ORDER BY cities.id")
 
     states = cursor.fetchall()
