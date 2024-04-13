@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
 
-    db_url = "mysql+mysqldb://argv[1]:argv[2]@localhost:3306/argv[3]"
+    db_url = "mysql+mysqldb://argv[1]:argv[2]@localhost/argv[3]"
 
     # running on the local host at port 3306 connect to mysql server
     engine = create_engine(db_url, pool_pre_ping=True)
