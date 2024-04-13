@@ -7,7 +7,7 @@ Script that lists all State objects from the database hbtn_0e_6_usa
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import create_engine
-from sqlalchemy.orm import decalarative_base
+from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
