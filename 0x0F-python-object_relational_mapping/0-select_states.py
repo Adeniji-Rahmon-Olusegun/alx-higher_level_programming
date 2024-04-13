@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     cursor = my_db.cursor()
 
-    cursor.execute("SHOW * FROM states")
+    cursor.execute("SELECT * FROM states")
 
     states = cursor.fetchall()
 
