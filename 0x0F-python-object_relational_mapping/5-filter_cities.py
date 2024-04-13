@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
 """
-
+Script that takes in the name of a state as an argument
+and lists all cities of that state,
+using the database hbtn_0e_4_usa
 """
 
 import sys
@@ -19,7 +21,12 @@ if __name__ == "__main__":
 
     cursor = my_db.cursor()
 
-    cursor.execute("SELECT * FROM states ORDER BY states.id")
+    cursor.execute(
+            "SELECT cities.id, cities.name, states.name\
+            FROM cities\
+            INNER JOIN states on cities.state_id = states.id\
+            WHERE BINARY states.name = %s
+            ORDER BY cities.id", [sys.argv[4]])
 
     states = cursor.fetchall()
 
