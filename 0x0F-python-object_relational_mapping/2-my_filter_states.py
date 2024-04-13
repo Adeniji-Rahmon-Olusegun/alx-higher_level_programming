@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     cursor = my_db.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name = sys.argv[4]")
+    cursor.execute("SELECT * FROM states WHERE name = %s", (sys.argv[4,))
 
     states = cursor.fetchall()
 
