@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-if __name__ = "__main__":
+if __name__ == "__main__":
+    
     import sys
     import MySQLdb
 
-    my_db = MYSQLdb.connect(
+    my_db = MySQLdb.connect(
             host="localhost",
             port=3306,
             user=sys.argv[1],
