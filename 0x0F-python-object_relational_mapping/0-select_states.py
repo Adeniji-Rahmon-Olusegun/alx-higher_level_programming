@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-if __name__ == "__main__":
+import sys
+import MySQLdb
 
-    import sys
-    import MySQLdb
+if __name__ == "__main__":
 
     my_db = MySQLdb.connect(
             host="localhost",
