@@ -21,9 +21,7 @@ if __name__ == "__main__":
 
     cursor = my_db.cursor()
 
-    query = "SELECT * FROM states WHERE BINARY name = %s"
-
-    cursor.execute(query, [argv[4]])
+    cursor.execute("SELECT * FROM states WHERE BINARY name = %s", [sys.argv[4]])
 
     states = cursor.fetchall()
 
