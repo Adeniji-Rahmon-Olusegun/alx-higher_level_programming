@@ -33,7 +33,7 @@ if __name__ == "__main__":
     corr_cities = []
 
     for state in states:
-        corr_cities.append(state)
+        corr_cities.append(state[1])
     print(", ".join(corr_cities))
 
     cursor.close()
