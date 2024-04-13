@@ -29,9 +29,12 @@ if __name__ == "__main__":
             ORDER BY cities.id", [sys.argv[4]])
 
     states = cursor.fetchall()
+    
+    corr_cities = []
 
     for state in states:
-        print(state)
+        corr_cities.append(state)
+    print(", ".join(corr_cities))
 
     cursor.close()
     my_db.close()
