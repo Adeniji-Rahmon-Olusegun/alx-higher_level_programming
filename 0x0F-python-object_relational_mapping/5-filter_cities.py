@@ -25,7 +25,7 @@ if __name__ == "__main__":
             "SELECT cities.id, cities.name, states.name\
             FROM cities\
             INNER JOIN states on cities.state_id = states.id\
-            WHERE BINARY states.name = %s
+            WHERE BINARY states.name = %s\
             ORDER BY cities.id", [sys.argv[4]])
 
     states = cursor.fetchall()
