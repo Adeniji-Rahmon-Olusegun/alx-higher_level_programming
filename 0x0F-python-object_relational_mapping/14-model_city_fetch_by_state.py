@@ -21,9 +21,6 @@ if __name__ == "__main__":
 
     session = Session()
 
-    # creates the desired table
-    Base.metadata.create_all(engine)
-
     cities = session.query(City, State).join(State).order_by(City.id).all()
 
     for city, state in cities:
