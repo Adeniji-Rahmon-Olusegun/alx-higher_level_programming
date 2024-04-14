@@ -27,8 +27,6 @@ if __name__ == "__main__":
 
     session.commit()
 
-    states = session.query(State).order_by(State.id).all()
+    print(new_state.id)
 
-    for state in states:
-        print(f"{state.id}: {state.name}")
     session.close()
