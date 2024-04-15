@@ -8,7 +8,6 @@ and an instance Base = declarative_base()
 from sqlalchemy import create_engine
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import declarative_base, relationship
-from relationship_city import City
 
 Base = declarative_base()
 
