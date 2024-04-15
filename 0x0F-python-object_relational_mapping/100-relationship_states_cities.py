@@ -6,10 +6,10 @@ the City “San Francisco” from the database hbtn_0e_100_usa
 """
 
 from sys import argv
-from relationship_state import Base, State
-from relationship_city import City
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from relationship_state import Base, State
+from relationship_city import City
 
 if __name__ == "__main__":
 
@@ -25,9 +25,7 @@ if __name__ == "__main__":
     session = Session()
 
     new_state = State(name="California")
-    new_city = City(name="San Francisco")
-
-    new_state.cities.append(new_city)
+    new_city = City(name="San Francisco", state=new_state)
 
     session.add_all([new_state, new_city])
 
