@@ -16,4 +16,3 @@ def find_peak(list_of_integers):
         else:
             upper_bound = mid_point - 1
     return list_of_integers[low_bound]
-
