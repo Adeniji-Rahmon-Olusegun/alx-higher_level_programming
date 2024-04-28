@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# module contains peak function
+"""module contains peak function"""
+
 
 def find_peak(list_of_integers):
     """
