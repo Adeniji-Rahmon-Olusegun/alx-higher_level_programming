@@ -10,5 +10,5 @@ if __name__ == "__main__":
 
     res = requests.get(sys.argv[1])
 
-    value = res.headers["X-Request-Id"]
+    value = res.headers.get("X-Request-Id")
     print(value)
