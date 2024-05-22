@@ -13,11 +13,11 @@ req(apiEndpoint, (err, response, body) => {
 
     tasks.forEach(todo => {
       if (todo.completed) {
-	      if (!finishedTasks[todo.userId]) {
-		      finishedTasks[todo.userId] = 1;
-	      } else {
-		      finishedTasks[todo.userId]++;
-	      }
+        if (!finishedTasks[todo.userId]) {
+          finishedTasks[todo.userId] = 1;
+        } else {
+          finishedTasks[todo.userId]++;
+        }
       }
     });
 
