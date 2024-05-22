@@ -10,10 +10,6 @@ req(url, (err, response, body) => {
   if (err) {
     console.error(err);
   } else {
-    fileSys.writeFile(fileName, body, 'utf8', (error) => {
-      if (error) {
-        console.error(error);
-      }
-    });
+    fileSys.writeFile(fileName, body, 'utf8');
   }
 });
